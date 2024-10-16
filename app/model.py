@@ -9,11 +9,19 @@ def get_questions():
     return questions_data
 
 def calculate_personality_type(scores):
-    # Simple scoring logic: threshold example for personality types
-    # This can be modified to use the actual scoring based on your criteria
+    # Calculate the total score from the scores dictionary
     total_score = sum(scores.values())
-    
-    if total_score >= 30:  # Adjust these values based on your scoring criteria
+
+    # Define personality types and their corresponding score thresholds
+    if total_score >= 60:  # Adjust these values based on your scoring criteria
+        return "The Visionary"
+    elif total_score >= 50:
+        return "The Architect"
+    elif total_score >= 40:
+        return "The Nurturer"
+    elif total_score >= 35:
+        return "The Activist"
+    elif total_score >= 30:
         return "The Compassionate"
     elif total_score >= 25:
         return "The Mindful"
@@ -27,3 +35,23 @@ def calculate_personality_type(scores):
         return "The Self-controlled"
     else:
         return "The Resilient"
+
+# Example usage
+if __name__ == "__main__":
+    scores = {
+        "question_1": 5,
+        "question_2": 3,
+        "question_3": 4,
+        "question_4": 5,
+        "question_5": 2,
+        "question_6": 4,
+        "question_7": 5,
+        "question_8": 3,
+        "question_9": 4,
+        "question_10": 2,
+        "question_11": 3,
+        "question_12": 4,
+    }
+    
+    personality_type = calculate_personality_type(scores)
+    print(f"Your personality type is: {personality_type}")
