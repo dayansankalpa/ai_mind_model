@@ -1,0 +1,12 @@
+[
+    {"id": 1, "question": "How often do you practice mindfulness?", "mental_factor_id": 1},
+    {"id": 2, "question": "How compassionate do you feel towards others?", "mental_factor_id": 2},
+    {"id": 3, "question": "How generous are you in helping others?", "mental_factor_id": 3},
+    {"id": 4, "question": "How patient are you when faced with difficulties?", "mental_factor_id": 4},
+    {"id": 5, "question": "Do you consider yourself wise in your decisions?", "mental_factor_id": 5},
+    {"id": 6, "question": "How self-controlled are you in your responses?", "mental_factor_id": 6},
+    {"id": 7, "question": "How equanimous do you remain under stress?", "mental_factor_id": 7},
+    {"id": 8, "question": "How often do you feel joyful?", "mental_factor_id": 8},
+    {"id": 9, "question": "How often do you express gratitude?", "mental_factor_id": 9},
+    {"id": 10, "question": "How often do you practice loving-kindness?", "mental_factor_id": 10}
+]

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Mind Model Chatbot</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Mind Model Chatbot</h1>
+        <form action="/submit" method="POST">
+            {% for question in questions %}
+                <div class="question">
+                    <label>{{ question['question'] }}</label>
+                    <select name="question_{{ question['id'] }}">
+                        <option value="0">Select</option>
+                        <option value="1">Not at all</option>
+                        <option value="2">Rarely</option>
+                        <option value="3">Sometimes</option>
+                        <option value="4">Often</option>
+                        <option value="5">Always</option>
+                    </select>
+                </div>
+            {% endfor %}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
